@@ -11,7 +11,7 @@ import support8 from '../img/support8.svg'
 export default function Support() {
     return (
   <section className="support">
-  <h2>Поддержка<br />от Drupal-coder</h2>
+  <h2>Разработка<br />от Drupal-coder</h2>
   <div className="container">
     <div className="row mx-0">
       <div className="col-12 col-md-6 col-lg-3 support-col">
