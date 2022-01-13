@@ -5,6 +5,7 @@ import cos from '../img/cos.jpg'
 import tg from '../img/tg.jpg'
 import ctg from '../img/ctg.jpg'
 import lim from '../img/lim.jpg'
+import integral from '../img/integral.jpg'
 
 
 export default function Team() {
@@ -55,6 +56,15 @@ export default function Team() {
                 <img src={lim} alt="Worker" width={280} height={280} className="img-responsive" />
                 </div>
                 <div className="member-card-name">Ирина Торкунова</div>
+                <div className="member-card-signature">Менеджер по работе с<br /> клиентами</div>
+            </div>
+            </div>
+            <div className="col-6 col-sm-6 col-md-4 member-block">
+            <div className="member-card">
+                <div className="member-photo">
+                <img src={integral} alt="Worker" width={280} height={280} className="img-responsive" />
+                </div>
+                <div className="member-card-name">Эльмира Дьякова</div>
                 <div className="member-card-signature">Менеджер по работе с<br /> клиентами</div>
             </div>
             </div>
