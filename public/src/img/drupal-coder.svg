@@ -39,7 +39,7 @@
     <rdf:RDF>
       <cc:Work
          rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
+        <dc:format>imag/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title>drupal-coder</dc:title>
