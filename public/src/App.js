@@ -4,8 +4,12 @@ import Compet from './Components/Compet'
 import Support from './Components/Support'
 import Expertise from './Components/Expertise'
 import Tariffs from './Components/Tariffs'
+import Solution from './Components/Solution'
 import Cases from './Components/Cases'
 import Team from './Components/Team'
+import Reviews from './Components/Reviews'
+import Partnership from './Components/Partnership'
+import Footer from './Components/Footer'
 
 
 function App() {
@@ -17,8 +21,12 @@ function App() {
     <Support/>
     <Expertise/>
     <Tariffs />
+    <Solution />
     <Cases />
     <Team />
+    <Reviews />
+    <Partnership />
+    <Footer/>
     </>
   )
 }
