@@ -1,41 +1,50 @@
 import '../css/cases.css'
-import laptopCase from '../img/laptop_case_1.jpg'
-import laptopCase2 from '../img/laptop_case_2.jpg'
+import Drupal1 from '../img/Drupal1.jpg'
+import interview from '../img/interview.jpg'
 import statCase from '../img/stat_case.jpg'
-import speedCase from '../img/speed_case.jpg'
-import monitorCase from '../img/monitor_case.png'
-
+import google from '../img/google.jpg'
+import sinz from '../img/sinz.jpg'
+import sea from '../img/sea.jpg'
+import seo from '../img/seo.png'
 
 export default function Cases() {
     return (
   <section className="container cases">
-    <h2 id="start">Последние кейсы</h2>
+    <h2 id="start">Последнее в блоге</h2>
     <div className="cases-grid">
       <a className="case-block" href>
-        <div className="case-image" style={{backgroundImage: `url(${laptopCase})`}} />
-        <h3>Настройка кэширования данных. Апгрейд сервера. Ускорение работы сайта в 30 раз!</h3>
-        <div className="case-date">04.05.2020</div>
-        <div className="case-text">Влияние скорости загрузки страниц сайта на отказы и конверсии. Кейс ускорения...</div>
+        <div className="case-image" style={{backgroundImage: `url(${interview})`}} />
+        <h3>Инитлаб в лицах. Интервью с Романом Агабековым</h3>
+        <div className="case-date">21.05.2021</div>
+        <div className="case-text">Интервью с руководителем отдела DevOPS, директором Initlab — Агабековым Романом...</div>
       </a>
       <a className="case-block full-screen-case" href>
-        <div className="case-image" style={{backgroundImage: `url(${laptopCase2})`}} />
-        <h3>Использование отчетов Ecommerce в Яндекс.Метрике</h3>
+        <div className="case-image" style={{backgroundImage: `url(${Drupal1})`}} />
+        <h3>Drupal Coder ТОП1 в России!</h3>
       </a>
       <a className="case-block full-screen-case" href>
         <div className="case-image" style={{backgroundImage: `url(${statCase})`}} />
-        <h3>Повышение конверсии страницы с формой заявки с применением AB-тестирования</h3>
-        <div className="case-date">24.01.2020</div>
+        <h3>Использование отчетов Ecommerce в Яндекс.Метрике</h3>
       </a>
       <a className="case-block full-screen-case" href>
-        <div className="case-image" style={{backgroundImage: `url(${speedCase})`}} />
-        <h3>Drupal 7: ускорение времени генерации страниц интернет-магазина на 32%</h3>
-        <div className="case-date">23.09.2019</div>
+        <div className="case-image" style={{backgroundImage: `url(${google})`}} />
+        <h3>Изменения алгоритмов поиска Google: к чему готовиться владельцам сайтов на Drupal</h3>
+        <div className="case-date">21.05.2021</div>
+      </a>
+      <a className="case-block full-screen-case" href>
+        <div className="case-image" style={{backgroundImage: `url(${sinz})`}} />
+        <h3>Инитлаб в лицах. Интервью с Сергеем Синицей</h3>
+        <div className="case-date">30.03.2021</div>
       </a>
       <a className="case-block" href>
-        <div className="case-image" style={{backgroundImage: `url(${monitorCase})`}} />
-        <h3>Обмен товарами и заказами интернет-магазинов на Drupal 7 с 1С: Предприятие, МойСклад, Класс365</h3>
-        <div className="case-date">22.08.2019</div>
-        <div className="case-text">Опубликован <span className="secret-href">релиз модуля...</span></div>
+        <div className="case-image" style={{backgroundImage: `url(${sea})`}} />
+        <h3>Капля в море: Запуск Drupal в Kubernetes</h3>
+        <div className="case-date">14.07.2020</div>
+        <div className="case-text">Опубликован статья на хабре: <span className="secret-href">https://...</span></div>
+      </a>
+      <a className="case-block full-screen-case" href>
+        <div className="case-image" style={{backgroundImage: `url(${seo})`}} />
+        <h3>Поисковая оптимизация. Трафик вырос в 2 раза!</h3>
       </a>
     </div>
     <div className="moreButton"><a href="#start">ПОКАЗАТЬ ЕЩЕ</a></div>
