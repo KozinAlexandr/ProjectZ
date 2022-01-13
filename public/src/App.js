@@ -8,6 +8,7 @@ import Solution from './Components/Solution'
 import Cases from './Components/Cases'
 import Team from './Components/Team'
 import Reviews from './Components/Reviews'
+import Partnership from './Components/Partnership'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <Cases />
     <Team />
     <Reviews />
+    <Partnership />
     </>
   )
 }
