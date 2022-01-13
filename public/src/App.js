@@ -5,6 +5,7 @@ import Support from './Components/Support'
 import Expertise from './Components/Expertise'
 import Tariffs from './Components/Tariffs'
 import Cases from './Components/Cases'
+import Team from './Components/Team'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Expertise/>
     <Tariffs />
     <Cases />
+    <Team />
     </>
   )
 }
