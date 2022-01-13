@@ -1,6 +1,5 @@
 import sample from '../img/Video.mp4';
 import '../css/header.css'
-//import cup from '../img/cup.png'
 
 export default function Header() {
     return (

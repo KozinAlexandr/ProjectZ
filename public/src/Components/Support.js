@@ -7,7 +7,7 @@ import support5 from '../img/support5.svg'
 import support6 from '../img/support6.svg'
 import support7 from '../img/support7.svg'
 import support8 from '../img/support8.svg'
-
+  
 export default function Support() {
     return (
   <section className="support">

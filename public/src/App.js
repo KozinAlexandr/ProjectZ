@@ -2,6 +2,7 @@ import Header from './Components/Header'
 import NavBar from './Components/NavBar'
 import Compet from './Components/Compet'
 import Support from './Components/Support'
+import Expertise from './Components/Expertise'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     <Header />
     <Compet/>
     <Support/>
+    <Expertise/>
     </>
   )
 }
