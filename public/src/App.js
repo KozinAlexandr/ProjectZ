@@ -11,7 +11,6 @@ import Reviews from './Components/Reviews'
 import Partnership from './Components/Partnership'
 import Footer from './Components/Footer'
 
-
 function App() {
   return (
     <>
