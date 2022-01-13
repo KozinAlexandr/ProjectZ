@@ -1,43 +1,135 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { Button } from "./Button";
 import '../css/form.css'
+import Mark from "../img/mark.svg";
+import MarkRectangle from "../img/mark-rectangle.svg";
+import Loading from "../img/loading.gif";
 
-export default function Form() {
+import Swal from 'sweetalert2';
+
+const Form = () => {
+    const {
+        register, 
+        handleSubmit,
+        formState: { errors, isValid }, 
+        reset 
+    } = useForm({ mode: 'onChange' });
+
+    const onSubmit = async (data) => {
+        setBtnDisable(true);
+
+        console.log(data);
+        localStorage.setItem('имя', data.name);
+        localStorage.setItem('телефон', data.phone);
+        localStorage.setItem('почта', data.mail);
+        localStorage.setItem('комментарий', data.comment);
+
+        let formdata= JSON.stringify(data);
+
+        const response = await fetch('https://api.slapform.com/TKGsrPM5H',{
+            method: "POST",
+            body: formdata,
+            })
+                .then( response => {
+                if (response.ok) {
+                    console.log(response.json());
+                    Swal.fire({
+                        title: 'ОТПРАВЛЕНО',
+                        text: 'Форма успешно отправлена!',
+                        icon: 'success',
+                    });
+                reset();
+                setBtnDisable(false);
+                }
+                else throw response;
+                })
+                .catch(error=>{
+                    console.log("Ошибка ",error);
+                    Swal.fire({
+                        title: 'ОШИБКА',
+                        text: 'Ошибка! Пожалуйста, отправьте форму еще раз',
+                        icon: 'error',
+                    });
+                    setBtnDisable(false);
+                })
+        setBtnDisable(false);
+    }
+
+    /*обработка добавления класса для блокировки кнопки отправления*/
+    let buttonClasses = [' '];
+    console.log(isValid)
+    if (!isValid) {
+        buttonClasses.push('disabled ');
+    } else {
+        buttonClasses = [' '];
+    }
+
+    const [btnDisable, setBtnDisable] = useState(false);
+
     return (
-      <div className="form-block">
-        <form id="form" action="https://formcarry.com/s/cMnbDiM_9Q" method="POST">
-          <input name="fname" id="fname" className="footer-form-input" placeholder="Ваше имя" />
-          <input name="fnumber" id="fnumber" className="footer-form-input" placeholder="Телефон" />
-          <input name="femail" id="femail" type="femail" className="footer-form-input" placeholder="E-mail" />
-          <textarea name="fmessage" id="fmessage" placeholder="Ваш комментарий" className="footer-form-input" defaultValue={""} />
-          <label htmlFor="fpolicy" className="c_box">
-            <input name="fpolicy" type="checkbox" className="cb" id="fpolicy"/>
-            <span className="cb_place" />
-            <div>
-              <span className="checkbox-text">Отправляя заявку, я даю согласие на <a href>обработку своих персональных данных</a>.</span>
+        <form method="POST" onSubmit={handleSubmit(onSubmit)}>
+            <div className={btnDisable ? "spinner-show" : "spinner-hide"}>
+                <img className="spinner-gif" src={Loading}/>
             </div>
-          </label>
-          <div id="recaptcha-store">
-            <div id="recaptcha" className="g-recaptcha" data-sitekey="6LcNchkaAAAAAKO7Q6lMTOmiSOdNicwd5Z9iD27H" data-theme="dark" data-callback="captchaCallback" data-expired-callback="captchaCallback">
-              <div style={{width: 304, height: 78}}>
-                <div>
-                  <iframe
-                    title="recaptcha"
-                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lfo_jAaAAAAAHmpEUhBfYS5oVoNQkGeWafAHMNG&co=aHR0cHM6Ly9hLm1pa292LmdpdGxhYi5pbzo0NDM.&hl=ru&v=r8jtf1oixV0IGff4hgB4EzDF&theme=dark&size=normal&cb=5oj16yr55nji"
-                    width={304} height={78}
-                    role="presentation" frameBorder={0} scrolling="no"
-                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                  />
+            <input
+                placeholder='Ваше имя'
+                {...register('name', { required: true })}
+            />
+            <div className='form-error'>
+                {errors?.name && <div className='form-error-text'>Заполните имя!</div>}
+            </div>
+
+            <input
+                placeholder='Телефон'
+                {...register('phone', {
+                    required: true,
+                    pattern: /(\+7|8)[- _]*\(?[- _]*(\d{3}[- _]*\)?([- _]*\d){7}|\d\d[- _]*\d\d[- _]*\)?([- _]*\d){6})/
+                })}
+            />
+            <div className='form-error'>
+                {errors.phone?.type === 'required' && <div>Заполните телефон!</div>}
+            </div>
+            <div className='form-error'>
+                {errors.phone?.type === 'pattern' && <div>Некорректный номер телефона!</div>}
+            </div>
+
+            <input
+                placeholder='E-mail'
+                {...register('mail', {
+                    required: true,
+                    pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                })}
+            />
+            <div className='form-error'>
+                {errors.mail?.type === 'required' && <div>Заполните почту!</div>}
+            </div>
+            <div className='form-error'>
+                {errors.mail?.type === 'pattern' && <div>Некорректная почта!</div>}
+            </div>
+
+            <textarea
+                placeholder='Ваш комментарий'
+                {...register('comment')}
+            />
+
+            <label>
+                <div className="checkbox">
+                <input
+                    {...register('checkbox',
+                     { required: true })}
+                    type="checkbox"
+                />
+                        <img src={MarkRectangle} alt="img" className="mark-rect"/>
+                        <img src={Mark} alt="img" className="mark"/>
+                <p className='checkbox-title'> Отправляя заявку, я даю согласие на обработку своих персональных данных  </p>
                 </div>
-                  <textarea id="g-recaptcha-response"
-                  name="g-recaptcha-response"
-                  className="g-recaptcha-response"
-                  style={{width: 250, height: 40, border: '1px solid rgb(193, 193, 193)', margin: '10px 25px', padding: 0, resize: 'none', display: 'none'}}
-                  defaultValue={""}
-                  />
-              </div>
-          </div>
-          </div>
-          <input id="sendButton" type="submit" className="footer-contact-button" value="ОСТАВИТЬ ЗАЯВКУ!" enabled />
+            </label>
+            <br />
+
+            <Button disabled={btnDisable} buttonStyle="btn--form" buttonClasses={buttonClasses.join("")} type={"submit"}>ОСТАВИТЬ ЗАЯВКУ!</Button>
         </form>
-      </div>
-    )}
+    );
+};
+
+export default Form;

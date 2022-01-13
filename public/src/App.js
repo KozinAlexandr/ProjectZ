@@ -9,7 +9,7 @@ import Cases from './Components/Cases'
 import Team from './Components/Team'
 import Reviews from './Components/Reviews'
 import Partnership from './Components/Partnership'
-import Footer from './Components/Footer'
+import Webform  from './Components/Webform'
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
     <Team />
     <Reviews />
     <Partnership />
-    <Footer/>
+    <Webform />
     </>
   )
 }
