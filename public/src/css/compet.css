@@ -1,13 +1,12 @@
 @font-face {
   font-family: 'Montserrat'; /* Гарнитура шрифта */
   src: url(../fonts/Montserrat-Regular.woff2); /* Путь к файлу со шрифтом */
- }
+}
 
- @font-face {
+@font-face {
   font-family: 'Montserrat-bold'; /* Гарнитура шрифта */
   src: url(../fonts/Montserrat-Bold.woff2); /* Путь к файлу со шрифтом */
- }
-
+}
 
 .competencies {
   margin: 100px 0px 180px;
@@ -54,7 +53,7 @@
 }
 
 .competency-icon:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: -54px;
