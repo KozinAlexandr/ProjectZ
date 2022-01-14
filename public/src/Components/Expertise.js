@@ -49,7 +49,7 @@ export default function Expertise() {
     </div>
   </div>
   <div className="Expertise-picture">
-    <img src={laptop} alt="laptop"/>
+    <img src={laptop} alt="laptops"/>
   </div>
 </section>
 )}
