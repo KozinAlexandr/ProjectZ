@@ -15,7 +15,7 @@ export default function Cases() {
       <a className="case-block" href>
         <div className="case-image" style={{backgroundImage: `url(${interview})`}} />
         <h3>Инитлаб в лицах. Интервью с Романом Агабековым</h3>
-        <div className="case-date">21.05.2021</div>
+        <div className="case-date">22.05.2021</div>
         <div className="case-text">Интервью с руководителем отдела DevOPS, директором Initlab — Агабековым Романом...</div>
       </a>
       <a className="case-block full-screen-case" href>
