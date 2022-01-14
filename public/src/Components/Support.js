@@ -39,7 +39,7 @@ export default function Support() {
           <div className="support-number">03.</div>
           <div className="support-headline">Расширенная техническая поддержка</div>
           <div className="text">
-            Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных.
+            Возможность организации расширенной техподдержки с 8:00 до 22:00 без выходных.
           </div>
           <div className="support-img"><img alt="Support" src={support3} /></div>
         </div>
