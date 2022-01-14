@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Fade from '@material-ui/core/Fade';
 import Form from './Form';
+import modalz from './Modal';
 
 const useStyles = makeStyles((theme) => ({
     modal: {
@@ -33,7 +34,7 @@ export default function Tariffs() {
     };
 
     return (
-    <section className="tariffs" id="tariffs">
+    <section className="tariffs">
         <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -52,7 +53,7 @@ export default function Tariffs() {
         </div>
         </Fade>
     </Modal>
-    <h2>Тарифы</h2>
+    <h2 id="tariffs">Тарифы</h2>
     <div className="container">
         <div className="row">
         <div className="col-12 col-md-4 order-1 tariff-col">
