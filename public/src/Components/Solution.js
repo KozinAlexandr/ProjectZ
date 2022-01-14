@@ -34,7 +34,7 @@ export default function Solution() {
       <div className="col-12 col-md-4 competency-block">
         <div className="text">
           <div className="competency-icon"><img src={solut3} alt="Solution"/></div>
-          <div className="time-title">от 8ч</div>
+          <div className="time-title">от 9ч</div>
           <div>
             Интеграция модуля <br /> оплаты
           </div>
