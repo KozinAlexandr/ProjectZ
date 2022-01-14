@@ -1,5 +1,5 @@
 import '../css/compet.css'
-import compet1 from '../img/compet1.svg'
+import compet0 from '../img/compet1.svg'
 import compet2 from '../img/compet2.svg'
 import compet3 from '../img/compet3.svg'
 import compet4 from '../img/compet4.svg'
@@ -22,7 +22,7 @@ export default function Compet() {
         </div>
         <div className="row">
         <div className="col-6 col-md-3 compet-block">
-            <div className="competency-icon"><img src={ compet1 } alt="Competency"/></div>
+            <div className="competency-icon"><img src={ compet0 } alt="Competency"/></div>
             <div className="text">
             Добавление <br /> информации на сайт,<br /> создание новых <br /> разделов
             </div>
