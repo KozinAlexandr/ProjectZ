@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Montserrat'; /* Гарнитура шрифта */
-  src: url(../fonts/Montserrat-Regular.woff2); /* Путь к файлу со шрифтом */
+  font-family: 'Montserrat'; 
+  src: url(../fonts/Montserrat-Regular.woff2); 
 }
 
 @font-face {
-  font-family: 'Montserrat-bold'; /* Гарнитура шрифта */
-  src: url(../fonts/Montserrat-Bold.woff2); /* Путь к файлу со шрифтом */
+  font-family: 'Montserrat-bold'; 
+  src: url(../fonts/Montserrat-Bold.woff2); 
 }
 
 .moreButton {

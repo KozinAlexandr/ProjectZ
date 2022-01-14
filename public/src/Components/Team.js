@@ -1,9 +1,9 @@
 
 import '../css/team.css'
-import sin from '../img/sin.jpg'
+import sins from '../img/sin.jpg'
 import cos from '../img/cos.jpg'
 import tg from '../img/tg.jpg'
-import ctg from '../img/ctg.jpg'
+import ctgz from '../img/ctg.jpg'
 import lim from '../img/lim.jpg'
 import integral from '../img/integral.jpg'
 
@@ -16,7 +16,7 @@ export default function Team() {
             <div className="col-6 col-sm-6 col-md-4 member-block">
             <div className="member-card">
                 <div className="member-photo">
-                <img src={sin} alt="Worker" width={280} height={280} className="img-responsive" />
+                <img src={sins} alt="Worker" width={280} height={280} className="img-responsive" />
                 </div>
                 <div className="member-card-name">Сергей Синица</div>
                 <div className="member-card-signature">Руководитель отдела веб-<br />разработки, канд. техн. наук,<br />заместитель директора</div>
@@ -25,7 +25,7 @@ export default function Team() {
             <div className="col-6 col-sm-6 col-md-4 member-block">
             <div className="member-card">
                 <div className="member-photo">
-                <img src={ctg} alt="Worker" width={280} height={280} className="img-responsive" />
+                <img src={ctgz} alt="Worker" width={280} height={280} className="img-responsive" />
                 </div>
                 <div className="member-card-name">Роман Агабеков</div>
                 <div className="member-card-signature">Руководитель отдела DevOPS,<br />директор</div>
