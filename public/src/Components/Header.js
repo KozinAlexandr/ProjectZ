@@ -1,4 +1,4 @@
-import sample from '../img/Video.mp4';
+import sampl from '../img/Video.mp4';
 import '../css/header.css'
 
 export default function Header() {
@@ -9,7 +9,7 @@ export default function Header() {
         <div id="video-block">
             <div id="video-filter" />
             <video className="video-background" playsInline autoPlay="autoplay" loop preload="auto" muted>
-            <source src={sample} type="video/mp4" />
+            <source src={sampl} type="video/mp4" />
             </video>
         </div>
         <div className="container">

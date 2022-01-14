@@ -10,7 +10,7 @@ import hamb from '../img/hamb.svg'
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                <a className="nav-link" href>ПОДДЕРЖКА DRUPAL</a>
+                <a className="nav-link" href>ТЕХ ПОДДЕРЖКА DRUPAL</a>
                 </li>
                 <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href>
@@ -23,6 +23,7 @@ import hamb from '../img/hamb.svg'
                     <a className="dropdown-item" href>ОПТИМИЗАЦИЯ СКОРОСТИ</a>
                     <a className="dropdown-item" href>ПЕРЕЕЗД НА HTTPS</a>
                 </div>
+
                 </li>
                 <li className="nav-item">
                 <a className="nav-link" href>ПРОДВИЖЕНИЕ</a>
@@ -50,7 +51,7 @@ import hamb from '../img/hamb.svg'
             </ul>
             </div>
             <a className="navbar-brand" href>
-            <img className="nav-logo" src={logo} alt="Главная" />
+            <img className="nav-logo" src={logo} alt="Лого" />
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <img src={hamb} alt="hamb icon" style={{ width: "100%"}}/>
