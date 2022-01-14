@@ -9,24 +9,24 @@ import Cases from './Components/Cases'
 import Team from './Components/Team'
 import Reviews from './Components/Reviews'
 import Partnership from './Components/Partnership'
-import Webform  from './Components/Webform'
+import Mainform  from './Components/Mainform'
 
 
 function App() {
   return (
     <>
-    <NavBar/>
-    <Header />
-    <Compet/>
-    <Support/>
-    <Expertise/>
-    <Tariffs />
-    <Solution />
-    <Cases />
-    <Team />
-    <Reviews />
-    <Partnership />
-    <Webform />
+      <NavBar/>
+      <Header />
+      <Compet/>
+      <Support/>
+      <Expertise/>
+      <Tariffs />
+      <Solution />
+      <Cases />
+      <Team />
+      <Reviews />
+      <Partnership />
+      <Mainform />
     </>
   )
 }

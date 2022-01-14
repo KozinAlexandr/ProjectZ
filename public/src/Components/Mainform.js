@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from "./Form";
 import Footer from './Footer';
-import '../css/webform.css'
+import '../css/mainform.css'
 import { ReactComponent as Phone } from "../img/phone-line.svg";
 import { ReactComponent as Mail } from "../img/mail.svg";
 
