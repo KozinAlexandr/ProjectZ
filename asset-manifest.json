@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ProjectZ/static/css/main.e34ba628.css",
-    "main.js": "/ProjectZ/static/js/main.9df26750.js",
+    "main.css": "/ProjectZ/static/css/main.606cfb4c.css",
+    "main.js": "/ProjectZ/static/js/main.4a5da3ec.js",
     "static/media/Video.mp4": "/ProjectZ/static/media/Video.29bf3eb491e43b3f325c.mp4",
     "static/media/Drupal1.jpg": "/ProjectZ/static/media/Drupal1.2f7fe973cf06624a06f4.jpg",
     "static/media/seo.png": "/ProjectZ/static/media/seo.061289401437a7d118be.png",
@@ -59,11 +59,11 @@
     "static/media/mark-rectangle.svg": "/ProjectZ/static/media/mark-rectangle.e1d411eb04795e1c2313fb30cfe9d572.svg",
     "static/media/arrow-left.svg": "/ProjectZ/static/media/arrow-left.6c550fca31b8fc582b9c.svg",
     "static/media/arrow-right.svg": "/ProjectZ/static/media/arrow-right.82c69a167a18a62edd7d.svg",
-    "main.e34ba628.css.map": "/ProjectZ/static/css/main.e34ba628.css.map",
-    "main.9df26750.js.map": "/ProjectZ/static/js/main.9df26750.js.map"
+    "main.606cfb4c.css.map": "/ProjectZ/static/css/main.606cfb4c.css.map",
+    "main.4a5da3ec.js.map": "/ProjectZ/static/js/main.4a5da3ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.e34ba628.css",
-    "static/js/main.9df26750.js"
+    "static/css/main.606cfb4c.css",
+    "static/js/main.4a5da3ec.js"
   ]
 }
