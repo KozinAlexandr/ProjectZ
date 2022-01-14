@@ -1,201 +1,32 @@
-.footer-block {
-    border-top: 1px solid #e5e5e5;
-    padding-top: 50px;
-    padding-bottom: 36px;
-    margin-top: 52px;
-    background-size: cover,165px,140px;
-  }
+.footer {
+  margin-top: 71px;
+  position: relative;
+  border-top: 1px solid #ffffff80;
+  background-image: url(../img/d2.svg);
+  background-repeat: no-repeat;
+  background-size: 32%;
+  background-position: bottom right;
+}
+.footer-container {
+  max-width: 1210px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
 
-  @media (min-width: 768px) {
-    .footer-block {
-      margin-top: 45px;
-    }
+.footer-text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .space-for-navbar {
+    height: 80px;
   }
-  
-  @media (min-width: 768px){
-    .footer-block {
-      background-size: cover,235px,230px;
-    }
+  .footer {
+    background-position: bottom 80px right;
   }
-  
-  @media (min-width: 992px){
-    .footer-block {
-      background-size: auto;
-    }
-  }
-  
-  footer {
-    padding: 117px 0 54px;
-    color: #fff;
-    font-family: Montserrat;
-    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),url(../img/D-flying.svg) no-repeat top center,url(../img/D-footer.svg) no-repeat bottom right,#040613;
-  }
-  
-  @media (min-width: 1200px){
-    .footer-block .container {
-      padding-left: 0;
-    }
-  }
-  
-  .contact-recommendation-wrapper {
-    max-width: 100%;
-    width: 480px;
-    margin: 0 auto 30px;
-    text-align: justify;
-  }
-  
-  @media (min-width: 601px) {
-    .contact-recommendation-wrapper {
-      text-align: center;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .contact-recommendation-wrapper {
-      text-align: unset;
-      margin-right: 100px;
-    }
-  }
-  
-  .contact-recommendation-title {
-    margin-bottom: 20px;
-    margin-top: initial;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 1.215;
-    text-align: center;
-    min-width: 345px;
-  }
-  
-  @media (min-width: 601px) {
-    .contact-recommendation-title {
-      font-size: 24px;
-      text-align: unset;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .contact-recommendation-title {
-      margin-top: initial;
-      font-size: 32px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .contact-recommendation-title {
-      font-size: 42px;
-      min-width: auto;
-    }
-  }
-  
-  .contact-recommendation-description {
-    margin-bottom: 30px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.55;
-    color: rgba(256,256,256,.7);
-  }
-  
-  @media (min-width: 992px) {
-    .contact-recommendation-description {
-      margin-bottom: 140px;
-    }
-  }
-  
-  .contact-recommendation-contacts ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .contact-recommendation-contacts ul li {
-    margin-bottom: 12px;
-  }
-  
-  .contact-recommendation-contacts ul li a {
-    position: relative;
-    padding-left: 40px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    color: #fff;
-    line-height: 1.1;
-  }
-  
-  @media (min-width: 768px) {
-    .contact-recommendation-contacts ul li a {
-      font-size: 18px;
-    }
-  }
-  
-  .contact-recommendation-contacts .contact-recommendation-phone a {
-    font-size: 24px;
-  }
-  
-  @media (min-width: 768px) {
-    .contact-recommendation-contacts .contact-recommendation-phone a {
-      font-size: 32px;
-    }
-  }
-  
-  .contact-recommendation-phone a:before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    left: 3px;
-    bottom: 4px;
-    background: url(../img/phone.svg) no-repeat center;
-    background-size: contain;
-    opacity: .8;
-  }
-  
-  .contact-recommendation-contacts .contact-recommendation-email a {
-    text-decoration: underline !important;
-  
-  }
-  
-  .contact-recommendation-email a:before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 24px;
-    height: 18px;
-    left: 0;
-    bottom: 0;
-    background: url(../img/mail.svg) no-repeat center;
-    background-size: contain;
-    opacity: .8;
-  }
-  
-  
-  #social-info-block-wrapper {
-    position: static;
-    padding: 0;
-    margin-top: 71px;
-  }
-  
-  #social-info-block-wrapper:before {
-    position: absolute;
-    content: "";
-    display: block;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: rgba(256,256,256,.3);
-  }
-  
-  .social-info-block {
-    padding-top: 56px;
-  }
-  
-  .social-links {
-    margin-bottom: 15px;
-  } 
- 
-  .social-info-block-wrapper p {
-    font-weight: 400;
-    margin-bottom: 0;
-  }
+}
